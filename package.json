@@ -1,24 +1,23 @@
 {
-  "name": "sidebar",
+  "name": "udemy-proxy-carinij",
   "version": "1.0.0",
-  "description": "Sidebar for Udemy clone website",
+  "description": "Proxy for Udemy clone website",
   "scripts": {
     "test": "jest --detectOpenHandles",
     "start": "nodemon server/start.js",
     "build": "webpack",
-    "dev": "webpack --watch",
-    "pop": "node database/populateDatabase.js"
+    "dev": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Charlotte-Badger/Sidebar.git"
+    "url": "git+https://github.com/Charlotte-Badger/udemy-proxy-carinij.git"
   },
   "author": "Jason P. Carini",
   "license": "0BSD",
   "bugs": {
-    "url": "https://github.com/Charlotte-Badger/Sidebar/issues"
+    "url": "https://github.com/Charlotte-Badger/udemy-proxy-carinij/issues"
   },
-  "homepage": "https://github.com/Charlotte-Badger/Sidebar#readme",
+  "homepage": "https://github.com/Charlotte-Badger/udemy-proxy-carinij#readme",
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/node": "^7.13.13",
@@ -50,6 +49,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "mongoose": "^5.12.7",
     "nodemon": "^2.0.7",
     "react": "^17.0.2",
