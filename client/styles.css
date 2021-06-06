@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+
+.pride-gradient {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg,  rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18%, rgb(247, 143, 47) 34%, rgb(244, 193, 81) 49%, rgb(82, 187, 118) 66%, rgb(38, 165, 215) 82%, rgb(224, 105, 183) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  color: #3c3b37;
+  font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.navbar p {
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: 14px;
+  white-space: nowrap;
+}
+
+.navbar p:hover {
+  color: #0f7c90;
+}
+
+.search-input-container {
+  width: 100%;
+  height: 46px;
+  border-radius: 9999px;
+  border: 1px solid #989586;
+}
+
+.search-input-container svg {
+  fill: #989586;
+  position: relative;
+  top: 11px;
+  left: 12px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.tight-letters {
+  letter-spacing: -0.02em;
+}
+
+.main-content-top-background {
+  width: 100%;
+  background-color: #1e1e1c;
+}
+
+.main-content-top-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+}
+
+#overview {
+  width: 780px;
+}
+
+.main-content-bottom-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#sidebar {
+  float:right;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+#content {
+  width: 780px;
+}
+
+#reviews {
+  width: 780px;
+}

@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use(cors());
 
 app.use('/course', (req, res) => {
-  res.sendFile('index.html', {root: 'client'});
+  res.sendFile('index.html', {root: 'public'});
 });
 
 module.exports = app;
