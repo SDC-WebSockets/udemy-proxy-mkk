@@ -15,6 +15,10 @@
   padding: 0;
   color: #3c3b37;
   font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  z-index: 3000;
+  position: absolute;
+  background-color: white;
+  width: 100%;
 }
 
 .navbar {
@@ -23,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .navbar img {
@@ -40,6 +45,23 @@
 
 .navbar p:hover {
   color: #0f7c90;
+}
+
+.heart-icon {
+  fill: white;
+  stroke: #73726c;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  display: block;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.shopping-cart-icon {
+  fill: #73726c;
+  display: block;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .search-input-container {
@@ -93,7 +115,7 @@
 #sidebar {
   float:right;
   margin-right: 40px;
-  margin-top: 30px;
+  margin-top: 110px;
 }
 
 #content {
