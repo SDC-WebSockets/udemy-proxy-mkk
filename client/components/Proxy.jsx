@@ -4,10 +4,10 @@ export const Proxy = () => {
 
   return (
     <div className="main-content-wrapper">
+      <div className="overview-bar-background"></div>
       <div className="header">
         <div className="pride-gradient"></div>
-        <div className="top-banner">
-        </div>
+        <div className="top-banner"></div>
         <div className="navbar">
           <img className="cursor-pointer" src="https://charlotte-badger-sidebar.s3-us-west-1.amazonaws.com/udemy-pride-logo.svg" alt="Udemy Clone Proxy" width="110px" height="32px"></img>
           <p className="cursor-pointer tight-letters">Categories</p>
@@ -32,15 +32,15 @@ export const Proxy = () => {
         </div>
       </div>
       <div className="main-content">
+        <div id="sidebar"></div>
         <div className="main-content-top-background">
-          <div id="sidebar"></div>
           <div className="main-content-top-container">
             <div id="overview"></div>
           </div>
         </div>
         <div className="main-content-bottom-container">
-          <div id="content"></div>
           <div id="featured"></div>
+          <div id="content"></div>
           <div id="reviews"></div>
         </div>
       </div>
