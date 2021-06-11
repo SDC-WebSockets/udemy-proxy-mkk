@@ -32,6 +32,7 @@ export const Proxy = () => {
           </button>
         </div>
       </div>
+      <div id="infobar"></div>
       <div className="main-content-top-background"></div>
       <div className="main-content">
           <div id="sidebar"></div>
@@ -39,15 +40,41 @@ export const Proxy = () => {
             <div id="overview"></div>
           </div>
           <div className="main-content-bottom-container">
-            <div id="featured"></div>
             <div id="content"></div>
+            <div className="top-companies-middle-wrapper">
+              <div className="top-companies-middle-text">
+                <div className="top-companies-middle-title">
+                  Top companies trust Udemy
+                </div>
+                <div className="top-companies-middle-subtitle">
+                  Get your team access to Udemy's top 5,500+ courses
+                </div>
+              </div>
+              <div className="top-companies-logos">
+                <img className="top-company-logo" alt="Booking" height="18" width="110" src="https://s.udemycdn.com/partner-logos/booking-logo.svg"></img>
+                <img className="top-company-logo" alt="Lyft" height="30" width="42" src="https://s.udemycdn.com/partner-logos/lyft-logo.svg"></img>
+                <img className="top-company-logo" alt="Mercedes" height="24" width="120" src="https://s.udemycdn.com/partner-logos/mercedes-logo-v2.svg"></img>
+                <img className="top-company-logo" alt="Volkswagon" height="32" width="32" src="https://s.udemycdn.com/partner-logos/volkswagen-logo.svg"></img>
+                <img className="top-company-logo" alt="adidas" height="28" width="42" src="https://s.udemycdn.com/partner-logos/adidas-logo.svg"></img>
+              </div>
+              <button className="try-udemy-for-business">
+                Try Udemy for Business
+              </button>
+            </div>
+            <div id="featured"></div>
+            <div id="author"></div>
             <div id="reviews"></div>
+            <div className="report-abuse-wrapper">
+              <button className="report-abuse-button">
+                Report abuse
+              </button>
+            </div>
           </div>
       </div>
       <div className="footer-divider"></div>
       <div className="footer">
         <div className="footer-banner"></div>
-        <div className="footer-nav">
+        <div className="footer-nav cursor-pointer">
           <ul>
             <li>Udemy for Business</li>
             <li>Teach on Udemy</li>
@@ -67,12 +94,17 @@ export const Proxy = () => {
             <li>Do not sell my personal information</li>
             <li>Sitemap</li>
           </ul>
-          <button>
+          <button className="footer-language-button cursor-pointer">
+            {/* World icon for language button */}
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 23 22" width="20">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zm2.95-8H5.08a7.987 7.987 0 014.33-3.56A15.65 15.65 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path>
+            </svg>
             English
           </button>
         </div>
         <div className="footer-logo-bar">
-          <img src="https://charlotte-badger-sidebar.s3.us-west-1.amazonaws.com/udemy-logo.svg"></img>
+          <img className="cursor-pointer" src="https://charlotte-badger-sidebar.s3.us-west-1.amazonaws.com/udemy-logo.svg"></img>
+          <span>&copy; 2021 Udemy, Inc.</span>
         </div>
       </div>
     </div>
