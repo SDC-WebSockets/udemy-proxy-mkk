@@ -34,6 +34,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 600px;
+}
+
+.nav-hamburger-menu {
+  display:none;
+  margin-left: 16px;
+  fill: #73726c;
 }
 
 .navbar img {
@@ -81,6 +88,14 @@
   outline: none;
   background-color: transparent;
   overflow: hidden;
+}
+
+.nav-magnifying-glass {
+  display: none;
+  position: relative;
+  margin-right: 10px;
+  top: -2px;
+  fill: #73726c;
 }
 
 .shopping-cart-icon {
@@ -337,7 +352,7 @@
 /* Services */
 
 #overview {
-  width: 780px;
+  width: 700px;
   height: 357px;
   position: relative;
 }
@@ -358,17 +373,21 @@
 }
 
 #content {
-  width: 780px;
+  width: 700px;
   margin-bottom: 20px;
+}
+
+#featured {
+  width: 700px;
 }
 
 #author {
   width: 700px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 #reviews {
-  width: 780px;
+  width: 700px;
 }
 
 /* Utility classes */
@@ -379,4 +398,109 @@
 
 .tight-letters {
   letter-spacing: -0.02em;
+}
+
+/* Media queries */
+@media (max-width: 1180px) {
+  #reviews {
+    width: 600px;
+  }
+
+  #featured {
+    width: 600px;
+  }
+
+  #author {
+    width: 600px;
+  }
+
+  #content {
+    width: 600px;
+  }
+
+  .top-companies-middle-wrapper {
+    width: 550px;
+  }
+
+  #overview {
+    width: 600px;
+  }
+
+  .main-content {
+    width: 980px;
+  }
+
+  .main-content-top-container {
+    width: 980px;
+  }
+
+  .report-abuse-wrapper {
+    width: 600px;
+  }
+
+  .report-abuse-button {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #sidebar {
+    display: none;
+  }
+
+  .nav-udemy-for-business {
+    display: none;
+  }
+
+  .main-content {
+    width: 600px;
+  }
+
+  .main-content-top-container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 920px) {
+  .nav-teach-on-udemy {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .nav-hamburger-menu {
+    display: inline-block;
+  }
+
+  .nav-magnifying-glass {
+    display: inline-block;
+  }
+
+  .search-input-container {
+    display: none;
+  }
+
+  .log-in-button {
+    display: none;
+  }
+
+  .sign-up-button {
+    display: none;
+  }
+
+  .world-icon {
+    display: none;
+  }
+
+  .navbar p {
+    display: none;
+  }
+
+  .navbar img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

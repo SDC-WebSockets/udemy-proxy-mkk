@@ -9,6 +9,9 @@ export const Proxy = () => {
         <div className="pride-gradient"></div>
         <div className="top-banner"></div>
         <div className="navbar">
+          <svg className="nav-hamburger-menu" xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 0 20 20" width="23">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
           <img className="cursor-pointer" src="https://charlotte-badger-sidebar.s3-us-west-1.amazonaws.com/udemy-pride-logo.svg" alt="Udemy Clone Proxy" width="110px" height="32px"></img>
           <p className="cursor-pointer tight-letters">Categories</p>
           <form className="search-input-container">
@@ -18,8 +21,14 @@ export const Proxy = () => {
             </svg>
             <input type="text" id="search-input-text" name="search-input-text" placeholder="Search for anything"></input>
           </form>
-          <p className="cursor-pointer tight-letters">Udemy for Business</p>
-          <p className="cursor-pointer tight-letters">Teach on Udemy</p>
+          <p className="cursor-pointer tight-letters nav-udemy-for-business">Udemy for Business</p>
+          <p className="cursor-pointer tight-letters nav-teach-on-udemy">Teach on Udemy</p>
+
+          {/* Another magnifying glass icon. This one will be hidden until the screen gets under 800px. */}
+          <svg className="nav-magnifying-glass" xmlns="http://www.w3.org/2000/svg" height="21" viewBox="0 0 20 20" width="23">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+          </svg>
+
           <svg className ="cursor-pointer shopping-cart-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
             <path d="M 15.55 13 c 0.75 0 1.41 -0.41 1.75 -1.03 l 3.58 -6.49 A 0.996 0.996 0 0 0 20.01 4 H 5.21 l -0.94 -2 H 1 v 2 h 2 l 3.6 7.59 l -1.35 2.44 C 4.52 15.37 5.48 17 7 17 h 12 v -2 H 7 l 1.1 -2 h 7.45 Z M 6.16 6 h 12.15 l -2.76 5 H 8.53 L 6.16 6 Z M 7 18 c -1.1 0 -1.99 0.9 -1.99 2 S 5.9 22 7 22 s 2 -0.9 2 -2 s -0.9 -2 -2 -2 Z m 10 0 c -1.1 0 -1.99 0.9 -1.99 2 s 0.89 2 1.99 2 s 2 -0.9 2 -2 s -0.9 -2 -2 -2 Z"></path>
           </svg>
