@@ -173,6 +173,7 @@
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .main-content-top-container {
@@ -407,14 +408,45 @@
   position: relative;
 }
 
-#sidebar {
+.default-sidebar-position {
+  position: relative;
+  top: 30px;
+  z-index: 500;
   float: right;
   margin-top: 110px;
+  margin-bottom: 16px;
+}
+
+.sticky-sidebar-position {
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
   z-index: 3000;
+  float: right;
+  margin-top: 110px;
   margin-bottom: 16px;
+}
+
+.final-sidebar-position {
+  z-index: 500;
+  position: absolute;
+  right: 40px;
+  bottom: 14px;
+}
+
+.fade-in {
+  animation-duration: 1s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 #content {

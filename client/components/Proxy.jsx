@@ -2,6 +2,27 @@ import React, { useState, useEffect } from 'react';
 
 export const Proxy = () => {
 
+  const [ proxyOffset, setProxyOffset ] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setProxyOffset(window.pageYOffset);
+    }
+  }, []);
+
+  let sidebarElement = <div id="sidebar" className="default-sidebar-position"></div>;
+
+  if (proxyOffset > 420 && proxyOffset < document.documentElement.getBoundingClientRect().height - 1400) {
+    sidebarElement = <div id="sidebar" className="sticky-sidebar-position fade-in"></div>;
+  } else if (proxyOffset < 420) {
+    sidebarElement = <div id="sidebar" className="default-sidebar-position"></div>;
+  } else {
+    sidebarElement = <div id="sidebar" className="final-sidebar-position"></div>;
+  }
+
+  console.log('height', document.documentElement.getBoundingClientRect().height);
+  console.log("offset", proxyOffset);
+
   return (
     <div className="main-content-wrapper">
       <div className="overview-bar-background"></div>
@@ -44,7 +65,7 @@ export const Proxy = () => {
       <div id="infobar"></div>
       <div className="main-content-top-background"></div>
       <div className="main-content">
-          <div id="sidebar"></div>
+          {sidebarElement}
           <div className="main-content-top-container">
             <div id="overview"></div>
           </div>
@@ -130,6 +151,5 @@ export const Proxy = () => {
         </div>
       </div>
     </div>
-
   )
 }
