@@ -74,15 +74,28 @@ export const Proxy = () => {
             <div id="author"></div>
             <div id="reviews"></div>
             <div className="report-abuse-wrapper">
-              <button className="report-abuse-button">
+              <button className="report-abuse-button cursor-pointer">
                 Report abuse
               </button>
             </div>
           </div>
       </div>
+      <div className="top-companies-footer-wrapper">
+        <div className="top-companies-footer-text-container">
+          <span className="top-companies-footer-text">
+            Top companies choose <a className="top-companies-footer-link">Udemy for Business</a> to build in-demand career skills.
+          </span>
+        </div>
+        <div className="top-companies-logos-footer">
+          <img className="top-companies-logo-footer cursor-pointer" alt="Lyft" height="24" width="34" src="https://s.udemycdn.com/partner-logos/lyft-logo.svg"></img>
+          <img className="top-companies-logo-footer cursor-pointer" alt="adidas" height="24" width="36" src="https://s.udemycdn.com/partner-logos/adidas-logo.svg"></img>
+          <img className="top-companies-logo-footer cursor-pointer" alt="Eventbrite" height="18" width="99" src="https://s.udemycdn.com/partner-logos/eventbrite-logo.svg"></img>
+          <img className="top-companies-logo-footer cursor-pointer" alt="Surveymonkey" height="24" width="157" src="https://s.udemycdn.com/partner-logos/surveymonkey-logo.svg"></img>
+          <img className="top-companies-logo-footer cursor-pointer" alt="Booking" height="24" width="140" src="https://s.udemycdn.com/partner-logos/booking-logo.svg"></img>
+        </div>
+      </div>
       <div className="footer-divider"></div>
       <div className="footer">
-        <div className="footer-banner"></div>
         <div className="footer-nav cursor-pointer">
           <ul>
             <li>Udemy for Business</li>
