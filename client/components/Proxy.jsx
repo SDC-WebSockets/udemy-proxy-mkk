@@ -20,9 +20,6 @@ export const Proxy = () => {
     sidebarElement = <div id="sidebar" className="final-sidebar-position"></div>;
   }
 
-  console.log('height', document.documentElement.getBoundingClientRect().height);
-  console.log("offset", proxyOffset);
-
   return (
     <div className="main-content-wrapper">
       <div className="overview-bar-background"></div>

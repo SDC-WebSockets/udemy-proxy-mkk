@@ -370,11 +370,12 @@
   align-items: center;
   justify-content: center;
   color: #3c3b37;
+  position: relative;
 }
 
 .footer-language-button svg {
   position: absolute;
-  right: 145px;
+  left: 16px;
 }
 
 .footer-logo-bar {
@@ -545,6 +546,15 @@
 
   .main-content-top-container {
     width: 600px;
+    height: 927px;
+  }
+
+  .main-content-bottom-container {
+    margin-top: 106px;
+  }
+
+  .main-content-top-background {
+    height: 957px;
   }
 }
 
@@ -621,11 +631,6 @@
     order: 0;
     margin: 0;
     margin-bottom: 20px;
-  }
-
-  .footer-language-button svg {
-    right: auto;
-    left: 40px;
   }
 
 }
