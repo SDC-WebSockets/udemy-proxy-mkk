@@ -10,13 +10,6 @@
   padding: 0;
 }
 
-/* .overview-bar-background {
-  height: 82px;
-  width: 100%;
-  background-color: #1e1e1c;
-  position: fixed;
-} */
-
 .header {
   margin: 0;
   padding: 0;
@@ -461,7 +454,7 @@
 
 #author {
   width: 700px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 #reviews {
@@ -546,7 +539,7 @@
 
   .main-content-top-container {
     width: 600px;
-    height: 927px;
+    height: 1127px;
   }
 
   .main-content-bottom-container {
@@ -554,7 +547,7 @@
   }
 
   .main-content-top-background {
-    height: 957px;
+    height: 1157px;
   }
 }
 
