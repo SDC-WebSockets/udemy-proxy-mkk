@@ -27,3 +27,6 @@ public/
 
 # AWS token
 aws.js
+
+# Environment variables
+.env

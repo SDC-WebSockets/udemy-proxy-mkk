@@ -3,20 +3,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Udemy Clone</title>
+    <title>Udemy Clone Reverse Proxy</title>
   </head>
   <body>
-    <div id="sidebar">
-      <script src="http://localhost:3004/index.js"></script>
-    </div>
-    <div id="app">
-      <script src="http://localhost:3000/overview.js"></script>
-    </div>
-    <div id="content">
-      <script src="http://localhost:9800/course-content.js"></script>
-    </div>
-    <div id="reviews">
-      <script src="http://localhost:2712/reviewBundle.js"></script>
-    </div>
+    <div id="app"></div>
+    <script defer src="https://charlotte-badger-author.s3.amazonaws.com/author.js"></script>
+    <script defer src="https://charlotte-badger-overview.s3.amazonaws.com/overview.js"></script>
+    <script defer src="https://charlotte-badger-sidebar.s3-us-west-1.amazonaws.com/sidebar.js"></script>
+    <script defer src="https://charlotte-badger-reviews.s3-us-west-1.amazonaws.com/reviewBundle.js"></script>
+    <script defer src="https://charlotte-badger-course-content-bundles.s3.eu-west-2.amazonaws.com/course-content.js"></script>
   </body>
 </html>
