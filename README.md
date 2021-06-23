@@ -44,5 +44,5 @@ This is a reverse proxy for a Udemy clone. It is part of a group project on serv
 3. index.html pulls scripts for the various services from S3 instances; in the likely case some or all of those aren't working at the time you're trying to run this, you'll need to change those to your own local or hosted copies of those scripts (which themselves will need to refer to your own local or hosted copies of the relevant databases).
 5. Build the client with `npm run build` or (if you want to put in in watch mode) `npm run dev`.
 6. Start the server with `npm start`.
-7. Navigate to localhost:6012 (or whatever URL and port you specified in `.env`).
+7. Open your browser and navigate to localhost:6012 (or whatever URL and port you specified in `.env`).
 8. Add `?courseId=` and then a number between 1 and 100, inclusive, to see it render with information from the different records in the various service databases.
