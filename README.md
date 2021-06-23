@@ -42,6 +42,7 @@ This is a reverse proxy for a Udemy clone. It is part of a group project on serv
    * NODE_ENV defaults to "development"; "production" is the other possible choice (which will tell Webpack to build a more efficent client, at the expense of some helpful development features).
    * PRIVATE_HOST should either be set to `localhost` or (if deployed to EC2) your EC2 private host URL.
 3. index.html pulls scripts for the various services from S3 instances; in the likely case some or all of those aren't working at the time you're trying to run this, you'll need to change those to your own local or hosted copies of those scripts (which themselves will need to refer to your own local or hosted copies of the relevant databases).
+4. Proxy.jsx assumes my S3 will be up with copies of the primary Udemy logos available; I've included those files under client/assets just in case. 
 5. Build the client with `npm run build` or (if you want to put in in watch mode) `npm run dev`.
 6. Start the server with `npm start`.
 7. Open your browser and navigate to localhost:6012 (or whatever URL and port you specified in `.env`).
