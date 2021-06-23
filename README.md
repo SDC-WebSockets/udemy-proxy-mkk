@@ -27,9 +27,13 @@ This is a reverse proxy for a Udemy clone. It is part of a group project on serv
   * Starts positioned at top of page in line with other elements
   * Joins fixed overview bar as user scrolls down  
   * Attaches to other content behind fixed overview bar as user reaches the end of the page
+
+![Sidebar top transition on scroll](/readme_assets/sidebar_top_transition.gif)
+![Sidebar bottom transition on scroll](/readme_assets/sidebar_bottom_transition.gif)
+
 * Handles many media queries, including changing the width and margins of most elements at 1180px, hiding the sidebar at 1080px, and adjusting which navigation elements are visible as the screen gets smaller (before changing to a mobile-friendly menu at 800px)
 
-
+![Proxy handling media queries](/readme_assets/proxy-media-queries.gif)
 
 ## Installation and Start
 
