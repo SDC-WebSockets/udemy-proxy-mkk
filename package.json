@@ -4,7 +4,7 @@
   "description": "Proxy for Udemy clone website",
   "scripts": {
     "test": "jest --detectOpenHandles",
-    "start": "nodemon server/start.js",
+    "start": "nodemon server/server.js",
     "build": "webpack",
     "dev": "webpack --watch"
   },
@@ -48,6 +48,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "mongoose": "^5.12.7",
