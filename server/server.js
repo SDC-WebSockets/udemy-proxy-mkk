@@ -53,7 +53,7 @@ app.all('/reviews/reviewer/:reviewerId', async (req, res) => {
     });
 });
 
-app.all('/reviews/item/:courseId/reviewer/:reviewerId', async (req, res) => {
+app.all('/reviews/item/:courseId/review/:reviewId', async (req, res) => {
   console.log(`proxying request to ${req.originalUrl} with method ${req.method}`);
   await axios({
     method: req.method,
