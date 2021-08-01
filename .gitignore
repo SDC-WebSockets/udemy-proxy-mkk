@@ -1,6 +1,9 @@
 ## MAC files ##
 .DS_Store
 
+## New relic ##
+newrelic
+
 ## NPM ##
 npm
 npm-debug.log
